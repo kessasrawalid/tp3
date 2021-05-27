@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>KESSASRA WALID tp3</title>
+    </head>
+
+
+
+    <body>
+        <form method="get">
+            <!--Infomations personnelles-->
+            <fieldset>
+                <legend>Infomations personnelles</legend>
+
+                <label>Nom :</label>
+                <input type="text" name="nom" placeholder="saisir votre nom"/>
+                <br/>
+
+                <label>Prénom :</label>
+                <input type="text" name="prenom" placeholder="saisir votre prénom"/>
+                <br/>
+
+                <label>sexe</label>
+                <br/>
+                <input type="radio" name="sexe" value="masculin" checked="checked" />
+                <label>Masculin</label>
+                <br/>
+                <input type="radio" name="sexe" value="feminin">
+                <label>Féminin</label>
+                <br/>
+
+                <label>date de naissance</label>
+                <input type="date" name="dateNaissance" min="1920-01-01" max="2008-01-01"/>
+                <br/>
+
+                <label>lieu de naissance</label>
+                <input list="liste" name="lieuNaissance"/>
+                        <datalist id="liste">
+                                 <option value="Alger"></option>
+                                 <option value="adrar"></option>
+                                 <option value="blida"></option>
+                                 <option value="djijel"></option>
+                                 <option value="oran"></option>
+                                 <option value="constantine"></option>
+                        </datalist>
+                <br/>
+
+
+                <label>nombre de frères et soeurs</label>
+                <input type="number" name="nombre" min="0" max="14"/>
+                <br/>
+
+
+                <label>Adresse</label>
+                <textarea name="adresse" cols="40" rows="10" placeholder="saisir votre adresse"></textarea>
+                <br/>
+                <br/>
+                
+                <label>num téléphone:</label>
+                <input type="tel" name="phone" pattern="[0][5|6|7][0-9]{8}"/>
+                <br/>
+
+                <label>Email:</label>
+                <input type="email" name="email"/>
+                <br/>
+            </fieldset>
+
+            <!--Infomations d'authentification-->
+            <fieldset>
+                <legend>Infomations d'authentification</legend>
+                <label>User name :</label>
+                <input type="text" name="username"/>
+                <br/>
+
+                <label>user Password :</label>
+                <input type="password" name="password"/><br/>                
+            </fieldset> 
+            <!--divers-->
+            <fieldset>
+                <legend>divers</legend>
+
+                <label>vos centres d'intéret</label>
+                <br/>
+                <input type="checkbox" name="inter1" value="lecture"/>
+                <label>lecture</label>
+                <br/>      
+
+                <input type="checkbox" name="inter2" value="musique"/>
+                <label>musique</label>
+                <br/>
+
+                <input type="checkbox" name="inter3" value="dessin"/>
+                <label>dessin</label>
+                <br/> 
+                <input type="checkbox" name="inter4" value="cuisine"/>
+                <label>cuisine</label>
+                <br/>  
+                 
+
+
+                <label>couleur preferer</label>
+                <br/>  
+                <select name="couleur preferer" value="violet">
+                    <option value="bleu">Bleu</option>
+                    <option value="rouge">Rouge</option>
+                    <option value="vert">Vert</option>
+                    <option value="black">black</option>
+                    <option value="white">white</option>
+                </select>
+                <br/>
+                
+                <label>autre couleur que vous aimez bien</label>
+                <br/>  
+                <select name="couleur[]" multiple="multiple">
+                    <option value="bleu">Bleu</option>
+                    <option value="rouge">Rouge</option>
+                    <option value="vert">Vert</option>
+                    <option value="black">black</option>
+                    <option value="white">white</option>
+                </select>
+                <br/>
+
+
+                <label>selectionez votre couleur preferee </label>
+                <input type="color" name="couleur"><br/> 
+
+            </fieldset> 
+
+            <h1>bouton de réinitialisation</h1>
+            <button type="reset">retablir</button>
+
+            <h1>bouton de soumission</h1>
+            <button type="submit">Envoyer</button>            
+        </form>
+    </body>
+</html>
